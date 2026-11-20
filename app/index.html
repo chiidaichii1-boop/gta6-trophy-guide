@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Leonida Trophy Guide — every one of GTA VI's 55 PlayStation 5 trophies, with a roadmap, a saved checklist and a cited guide for each. Works offline.">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a roadmap to the platinum, a saved checklist and a cited guide for each one. Works entirely offline.</p>
+  </div>
+  <div class="progress-card" id="progressCard" aria-live="polite">
+    <p class="progress-count" id="progressCount">0 of 55 earned</p>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <p class="progress-grades" id="progressGrades">Platinum 0/1 &middot; Gold 0/2 &middot; Silver 0/6 &middot; Bronze 0/46</p>
+    <p class="progress-note">Progress is saved in this browser only.</p>
+  </div>
+</header>
+
+<p class="missable-banner" id="missableBanner"><strong>1 potentially missable trophy:</strong> <button type="button" class="linklike" id="missableJump">Positive Mental Attitude</button> — do the Chapter 1 balcony meditation at Jason&rsquo;s house, or it is gone after Chapter 1. Everything else can be earned after the story.</p>
+
+<section class="controls" aria-label="Find and filter trophies">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission or keyword…" autocomplete="off"></label>
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+  <label>Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="toggle"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+  <label class="toggle"><input id="hideEarned" type="checkbox"> Hide earned</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  <button id="reset" type="button">Reset</button>
+</section>
+
+<main class="layout">
+  <section class="list-col" aria-label="Trophy checklist">
+    <p class="list-meta" id="listMeta">55 trophies</p>
+    <ul class="trophy-list" id="rows"></ul>
+  </section>
+  <aside class="detail-col" aria-label="Trophy guide">
+    <div class="detail" id="detail"></div>
+  </aside>
+</main>
+
+<section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">About 200 hours, difficulty 4/10 (PowerPyx; Push Square says 250+). One playthrough — there is no mission replay and no New Game+. Cheats disable trophies and stop the game saving, so keep them off your platinum save. The game has 15 manual save slots and 1 autosave: keep a save at the start and end of each chapter.</p>
+  <ol class="roadmap-steps" id="roadmapSteps"></ol>
+  <div class="facts">
+    <div><strong>55</strong><span>trophies</span></div>
+    <div><strong>28</strong><span>hidden until earned</span></div>
+    <div><strong>0</strong><span>online trophies</span></div>
+    <div><strong>5</strong><span>story chapters</span></div>
+    <div><strong>1</strong><span>possibly missable</span></div>
+    <div><strong>~200 h</strong><span>to platinum</span></div>
+  </div>
+</section>
+
+<footer class="sources">
+  <h2>Sources &amp; notes</h2>
+  <p>Official trophy names, descriptions and grades are as PlayStation publishes them, via PSNProfiles, TrueTrophies and Exophase (all three agree on every name, description and grade). Every guide above is written in our own words for this guide; the facts behind each one are cited beside it, mostly from PowerPyx&rsquo;s GTA 6 Trophy Guide &amp; Roadmap and Sixshore&rsquo;s trophy list. Two methods are still unconfirmed by the guide writers (Bad Luck, I Guess and Ten Pin) and are marked as such. Hidden status follows PSNProfiles / TrueTrophies; Push Square counts 27 hidden and does not mark Personal Best as hidden.</p>
+  <ul class="source-list" id="sourceList"></ul>
+  <p class="disclaimer">Unofficial fan guide. Grand Theft Auto and GTA are trademarks of Rockstar Games; this guide uses no Rockstar logo, artwork or game screenshots. Made for the make.fun GTA 6 trophy guide bounty — every guide is written in our own words, sources cited beside each trophy.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
